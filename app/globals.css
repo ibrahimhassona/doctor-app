@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dark {
+  @apply bg-blck text-white;
+}
+.light {
+  /* color: blck;
+background-color:#e7e9fb ; */
+  @apply bg-white text-blck;
+}
+.anim {
+  @apply transition-all duration-300;
+}
+
+/* Grid The View */
+.dist-view {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  @apply gap-2 rest-of-h max-sm:flex max-sm:flex-col relative max-sm:overflow-x-hidden;
+}
+/* Header */
+.header-items {
+  @apply px-[10px] py-[2px] hover:shadow-lg  rounded-sm cursor-pointer anim shadow-md;
+}
+/* Side Menu Shadow */
+.side-shadow-md {
+  box-shadow: -3px 0px 3px -2px rgba(0, 0, 0, 0.2),
+    3px 0px 3px -2px rgba(0, 0, 0, 0.2);
+}
+.container {
+  @apply px-[15px] m-auto;
+}
+/* feature */
+.feature-wraping {
+  @apply anim  overflow-hidden  cursor-pointer max-sm:w-[90%] shadow-md p-2 hover:border-green border border-transparent rounded-sm;
+}
+.feature-item {
+  @apply flex flex-col justify-around items-center gap-2 h-full;
+}
+.feature-icon {
+  @apply text-3xl text-light_yellow;
+}
+.feature-num {
+  @apply font-semibold text-green text-xl;
+}
+.feature-text {
+  @apply text-lg;
+}
+/* for the main container in layout */
+.rest-of-h {
+  @apply h-[calc(100vh-45px)];
+}
+.when-mobile {
+  @apply max-sm:absolute max-sm:w-[50%]  max-sm:z-20;
+}
+
+/* Today page */
+.table-row {
+  @apply flex gap-1 anim justify-between  px-2 capitalize text-center rounded-sm;
+}
+
+.table-cel {
+  @apply p-1 line-clamp-1  rounded-sm anim overflow-hidden capitalize;
+}
+.cost {
+  @apply w-[110px];
+}
+
+/* MODULE */
+.module-field-parent{
+ @apply  flex flex-col gap-4 w-[90%]
+}
+.module-field {
+  @apply flex items-center gap-2 justify-start;
+}
+.module-icon {
+  @apply text-xl text-yellow;
+}
+.module-name {
+  @apply  font-semibold mb-2;
+}
+.moduletextarea {
+  @apply w-[90%] outline-none rounded-sm bg-transparent 
+}
+.module-btn{
+  @apply anim rounded-sm py-1 px-2
+}
+.close-module{
+  @apply p-1 rounded-sm text-3xl anim hover:scale-105 cursor-pointer absolute top-1 left-1
+}
+.add-cost{
+  @apply rounded-sm bg-transparent  text-center border-[1px]  outline-none
+}
