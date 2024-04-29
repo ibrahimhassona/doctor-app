@@ -26,7 +26,7 @@ const PreviousCasesPage = () => {
     <MotionWraping>
       <Heading ar="الحالات السابقه " en="Previous Cases" />
       <div className="anim">
-        <div className="w-full flex item-center my-8">
+        <div className="w-full flex item-center my-8 ">
           <input
             type="text"
             onChange={(e)=>setSearch(e.target.value)}
@@ -34,7 +34,7 @@ const PreviousCasesPage = () => {
             placeholder={`${
               languges == "en" ? "Search by name" : "بحث بالاسم"
             }`}
-            className="px-2 py-1 rounded-sm bg-transparent outline-none border m-auto"
+            className="w-[90%] px-2 py-1 rounded-sm bg-transparent outline-none border m-auto"
           />
         </div>
         {data && (

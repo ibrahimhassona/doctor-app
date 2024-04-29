@@ -30,7 +30,7 @@ const Page = () => {
       {userRole && <div className="anim">
         {/* ----------------- SHOW THE DATA ------------------*/}
         {monthlyData && (
-          <div className="w-[600px] max-md:w-[400px] mt-8 m-auto flex flex-col">
+          <div className="w-[600px] max-md:w-[350px] mt-8 m-auto flex flex-col">
             <div className="table-row mb-4">
               <span className="table-cel w-[150px] font-semibold">
                 {languges == "en" ? "Month" : "الشهر"}

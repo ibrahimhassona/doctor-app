@@ -113,7 +113,7 @@ const LogoutPage = () => {
             {text.logout}
           </button>
           {userRole  && (
-            <div className="flex flex-col gap-2 ">
+            <div className="flex flex-col gap-2 max-md:w-[300px] lg:w-[full]">
               <input
                 className="rounded-sm bg-transparent py-1 px-2 border"
                 type="email"
